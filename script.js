@@ -1,5 +1,5 @@
 //your JS code here. If required.
-document.addEventListner(DOMContentLoaded,function(){
+document.addEventListner("DOMContentLoaded",function(){
 	const squres=document.getElementsByClassName("square");
 
 	squres.forEach(squre=>{
