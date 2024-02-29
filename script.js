@@ -4,10 +4,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	squares.forEach(square => {
 		square.addEventListener("mouseover", function () {
-			squares.forEach(otherSquare => {
+			for(let i=0;i<squares.length;i++){
+				let otherSquare=squares[i];
 				if (otherSquare !== square) {
 					otherSquare.style.backgroundColor = "#6F4E37";
 				}
+			}
 			});
 		});
 		square.addEventListener("mouseout", function () {
