@@ -5,7 +5,7 @@ document.addEventListner(DOMContentLoaded,function(){
 	squres.forEach(squre=>{
 		squre.addEventListner("mouseover",function () {
 			squres.forEach(currsqre=>{
-				if(currsqre!=squre){
+				if(currsqre!==squre){
 					currsqre.style.backgroundColor = "#6F4E37";
 				}
 			});
