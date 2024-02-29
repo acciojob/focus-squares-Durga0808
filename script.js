@@ -1,15 +1,13 @@
 //your JS code here. If required.
 document.addEventListener("DOMContentLoaded", function() {
-	const squares = document.getElementsByClassName("square");
+	const squares = document.querySelectorAll(".square");
 
 	squares.forEach(square => {
 		square.addEventListener("mouseover", function () {
-			for(let i=0;i<squares.length;i++){
-				let otherSquare=squares[i];
+			squares.forEach(otherSquare => {
 				if (otherSquare !== square) {
 					otherSquare.style.backgroundColor = "#6F4E37";
 				}
-			}
 			});
 		});
 		square.addEventListener("mouseout", function () {
